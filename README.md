@@ -1,6 +1,5 @@
 # ETL-Project
 
-
 # Introduction
 
 The aim of this project was to create a database which could be used to evaluate the risk of skin cancer due to occupational UV exposure. 
@@ -8,10 +7,10 @@ The end database allows for modelling to guide targeted preventative measures an
 
 The motivation behind this was that although there is recognition of the risk by OSH regulatory bodies and national exposure guidelines exist the broader understanding of the risk is minimal compared to other occupational risks with long term health consequencies like manual handling, asbestos etc. 
 
-Historical UV Index readings from various cities across Australia was obtained from The Australian Radiation Proection and Nuclear Safet Agency (ARPANSA) and that could be related to 
-Data from two sources was selected. Historical UV readings from Perth, Darwin and Sydney 
+The main data source was Australian UV Index readings from The Australian Radiation Proection and Nuclear Safet Agency (ARPANSA). This was extracted, transformed and loaded into an postgresql data so that it could be easily related by year to other datasources like percentage of workers that may have an
+increased risk of UV exposure. A metric for measuring the number of outdoor workers was calculated from industry employment numbers obtained from the Australian Burea of Statistics (ABS).
 
-Employment numbers for selected industries were obtained from  
+The database aims to be able to collate further UV data from the same cities as well as introduce other yearly metrics that could be used to evaluate risk such as skin cancer statistics and death statistics.
 
 
 
@@ -76,3 +75,10 @@ All tables were loaded into a postgresql database as per the below schema:
 An SQL relational database was chosen due to the strucutured nature of time series data and also the requirement to draw conclusions regarding UV exposure with workforce data via annual trends. It also allows for the structure UV data to be maintained in the future so that consistent values are compared over time.
 
 The SQL format allows for the creation of models and visualisations that could highlight when and where risk of UV exposure is increased and what percentage of the working population could be affected. 
+
+
+# Contributors 
+:small_blue_diamond: Fern Bradder: (https://github.com/FernB)  
+:small_blue_diamond: Jimmy Faccioli: (https://github.com/jfaccioli)
+
+
