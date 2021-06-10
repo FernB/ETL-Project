@@ -53,7 +53,7 @@ Having the year separated out also made it possible to relate other annual datas
 
 A separate location dataframe was created which contained city names, latitute and longitude which would make relating future additional datasets to the UV data easier.
 
-A time dataframe and year dataframe containing unquie time and year values were created so that each cities table to eachother via these tables and also have the workforce table relate to the year table.
+A time dataframe and year dataframe containing unique time and year values were created so that each cities table to eachother via these tables and also have the workforce table relate to the year table.
 
 Although the ABS dataset was contained in a single file the format required more extensive transformation.
 
